@@ -1,0 +1,1140 @@
+/*
+-------------------------------------------------
+  Theme Name: Cosmos clinical dashboard Template
+  Theme URL: 
+  Author:  Cosmos clinical dashboard
+  Author URL:  
+  Creation Date:
+  Description:A default stylesheet for  Cosmos clinical dashboard
+  Version: 1.00
+  Primary use: startup, company, agency portfolio, company portfolio, web agency template, startup portfolio,corporate, business, responsive, bootstrap, html5, clean, modern, creative, landing page, app landing etc.
+
+  ---------------------------------------------------
+  Developed By: zainiklab
+  Developer URL: zainiklab
+
+  ---------------------------------------------------
+
+  --------------------------------------------------
+  Table of Contents
+  --------------------------------------------------
+  1. General CSS
+  2. Typography CSS
+  3. Button CSS
+  4. Navbar CSS
+
+------------------------------------------------ */
+
+
+/*-----------------------------------------------
+    1. General Style
+-------------------------------------------------*/
+
+  * {
+      margin: 0;
+      padding: 0;
+      border: none;
+      outline: none;
+  }
+
+  body,
+  html {
+      height: 100%;
+      margin: 0;
+  }
+
+body {
+    background: #f3f3f3 none repeat scroll;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Poppins", sans-serif;
+    color: #1B1B1B;
+    letter-spacing: 0.05em;
+    overflow-x: hidden;
+
+}
+
+p{
+  line-height: 1.75;
+  color: #1B1B1B;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    color: #101127;
+  }
+a,
+a > * {
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--green-color);
+}
+
+img::selection {
+  background: transparent;
+}
+.page-link:focus {
+  box-shadow: none;
+}
+.cursor {
+    cursor: pointer;
+}
+/* Theme All Transitions Start
+------------------------------- */
+a, #mainNav, .theme-button{
+    transition: all .5s ease-in-out;
+}
+
+.slow-transition, .theme-button, .flaticon-right-arrow::before , .flaticon-left-arrow::before{
+    transition: all .7s ease-in-out;
+}
+/* Theme All Transitions End
+------------------------------- */
+
+  /*----Form Control Reset CSS----*/
+.select-group {
+    position: relative;
+}
+select.form-control[multiple], select.form-control[size] {
+    min-height: 45px;
+}
+.select-group::before {
+    position: absolute;
+    font-family: "Flaticon";
+    content: "";
+    right: 10px;
+    top: 47px;
+    pointer-events: none;
+    font-size: 10px;
+}
+.select-group .form-control {
+    appearance: none;
+}
+.form-control::-webkit-calendar-picker-indicator {
+    background-image: url('../img/icons/calendar.svg');
+}
+.form-control {
+    width: 100%;
+    border: none;
+    background-color: #F8F8F8;
+    height: 45px;
+    color: #1B1B1B;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 23px;
+    font-family: "Poppins", sans-serif;
+    transition: all .5s;
+}
+.cursor {
+    font-size: 20px;
+    font-weight: 500;
+}
+.form-control:focus {
+    background-color: #F8F8F8;
+      border-color: #F8F8F8;
+      box-shadow: none;
+}
+.form-control::placeholder {
+      color: #1B1B1B;
+}
+.select-control {
+    position: relative;
+}
+.select-control::before {
+    position: absolute;
+    font-family: "Flaticon";
+    content: "";
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 10px;
+}
+.select-control select.form-control {
+    appearance: none;
+    min-width: 100%;
+}
+.visit-name .form-control {
+    width: 90px;
+    margin-left: 10px;
+}
+.form-control.start {
+    width: 40px;
+    border-radius: 6px 0 0 6px;
+    background-color: #EBEBEB;
+}
+.form-control.end {
+    width: 40px;
+    border-radius: 0 6px 6px 0;
+}
+.stipend-input .form-control {
+    width: 50px;
+    padding: 0;
+    text-align: center;
+}
+.offset-group .offset-input {
+    width: 30px;
+    background-color: #EBEBEB;
+    border-radius: 6px 0 0 6px;
+    padding: 0;
+    text-align: center;
+}
+.offset-group .select-control .form-control {
+    border-radius: 0 6px 6px 0;
+    min-width: 80px;
+}
+
+/* Custom Checkbox CSS Start */
+.custom-control-label {
+    color: #1B1B1B;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 23px;
+    pointer-events: none;
+}
+.custom-control.custom-checkbox {
+    padding-left: 40px;
+}
+.custom-control-input {
+    width: 26px;
+    height: 27px;
+    border: none;
+    box-shadow: none;
+}
+.custom-control-input:focus {
+    border: none;
+    box-shadow: none;
+    background-image: none;
+    background-color: none;
+}
+.custom-control-input:visited {
+    border: none;
+    box-shadow: none;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 4px;
+    width: 26px;
+    height: 27px;
+    left: -41px;
+    top: -2px;
+    border: 2px solid #EAEAEA;
+    background-image: none;
+    background-color: transparent;
+}
+.custom-control-label::after {
+    position: absolute;
+    top: 2px;
+    left: -25px;
+    display: block;
+    width: auto;
+    height: auto;
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    line-height: 1;
+    font-size: 16px;
+    background: #ffffff;
+    display: inline-block;
+    background-image: none;
+    opacity: 0;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    opacity: 1;
+    background-image: none;
+    background-color: #ffffff;
+    color: var(--green-color);
+    z-index: 1;
+    box-shadow: none;
+    opacity: 1;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    display: block;
+    background-color: transparent;
+    border-color: var(--green-color);
+    box-shadow: none;
+}
+.custom-checkbox .custom-control-input:checked .custom-control-label::after, 
+.custom-checkbox .custom-control-input:active .custom-control-label::after,
+.custom-checkbox .custom-control-input:focus .custom-control-label::after {
+    outline: none;
+    box-shadow: none;
+}
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: none;
+    background-color: transparent;
+}
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color: #EAEAEA;
+    background-color: transparent;
+}
+  /* Custom Checkbox CSS End */
+
+/*------------------------------------------
+            2.  Typography
+-------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    margin: 0;
+    color: #1B1B1B;
+}
+
+p{
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1B1B1B;
+}
+figure {
+    margin: 0 0 0;
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+/*--------------------------------
+            2.1 Theme Color
+-----------------------------------*/
+:root{
+    --white-color: #fff;
+    --black-color: #1B1B1B;
+    --green-color: #07BE45;
+    --red-color: #FF0000;
+    --violet-color: #697DE8;
+    --text-color: #646464;
+    --border-color: #EDF1F4;
+    --bg-secondary: #f8f8f8;
+    --blue-color: #4885ed;
+    --bg-light: #21252e;
+    --bg-dark: #1c1f27;
+}
+.active, td.active {
+    color: var(--green-color)!important;
+}
+.bg-active {
+    background-color: var(--green-color);
+}
+/*--------------------------------
+    2.3 Theme padding, margin
+-----------------------------------*/
+.pb-15 {
+    padding-bottom: 15px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+/*--------------------------------
+    2.3 Theme Font Family, Font Size
+-----------------------------------*/
+
+.font-weight-normal{
+    font-weight: 400;
+}
+.font-semi-bold {
+    font-weight: 500;
+}
+.font-bold{
+     font-weight: 700;
+ }
+.font-18{
+    font-size: 18px;
+}
+.font-14{
+    font-size: 14px;
+}
+
+/*--------------------------------
+   2.4 Template Default CSS
+-----------------------------------*/
+
+/*----Template Main Section ----*/
+section{
+    position: relative;
+    z-index: 9;
+}
+/*Flat Icon Default Settings*/
+[class^="flaticon-"]::before, [class*=" flaticon-"]::before, [class^="flaticon-"]::after, [class*=" flaticon-"]::after {
+    margin-left: 0;
+}
+
+/*--------------------------------
+   2.5 Default Image Overlay CSS
+-----------------------------------*/
+
+/*------------------------------------------
+    2.  Typography
+-------------------------------------------*/
+
+/*--------------------------------------------
+    3. Button Style
+---------------------------------------------*/
+.btn{
+  padding: 0;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+button{
+    background-color: transparent;
+}
+button:focus {
+    outline: 0;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+/*-----Theme Button Style-----*/
+.theme-button {
+    color: #fff !important;
+    background-color: #3cba54;
+    cursor: pointer;
+    transition: all 0.7s ease 0s;
+    outline: none;
+    border-radius: 6px;
+    height: 42px;
+}
+.theme-button:hover {
+    background-color: #10a52d;
+}
+/*-------------------------------------------
+      3. Navbar Area CSS
+-------------------------------------------*/
+
+/*-------------------------------------------
+      4. Preloader Area Start
+-------------------------------------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99999999;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#status {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url('../img/loader.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+/*-------------------------------------------
+      4. Preloader Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+      5. Header Area
+-------------------------------------------*/
+.header-area {
+    background-color: #fff;
+    padding: 25px 30px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100px;
+}
+.logo-area {
+    width: 270px;
+}
+.header-right-part{
+    width: calc(100% - 270px);
+}
+.header-left {
+    display: flex;
+}
+
+.header-left .dropdown {
+    margin-left: 10px;
+}
+button#notification, button#message {
+    height: 50px;
+    width: 50px;
+    background-color: #F3F3F3;
+    border: none;
+    color: #4B5468;
+    border-radius: 6px;
+}
+button#notification i, button#message i, .btn-group-1 button i {
+    position: relative;
+    top: 2px;
+}
+.dropdown.for-header-site button, button#notification:hover, button#message:hover {
+    color: var(--green-color);
+}
+.user-img-box {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(7, 190, 69, 0.19);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--green-color);
+}
+.user-img-box i {
+    font-size: 20px;
+}
+.user-info .media {
+    align-items: center;
+}
+.user-info .media-body h6 {
+    font-size: 14px;
+    line-height: 23px;
+}
+.user-info .media-body span {
+    color: var(--green-color);
+}
+.dropdown.for-header-site {
+    display: flex;
+    margin-right: 18px;
+    position: relative;
+    margin-right: 39px;
+}
+.for-header-site::after {
+    position: absolute;
+    content: "";
+    z-index: 9;
+    background-color: #E4E4E4;
+    right: 0;
+    height: 34px;
+    width: 1px;
+    top: 9px;
+    right: -22px;
+}
+.dropdown.for-header-site i {
+    font-size: 13px;
+    color: #4B5468;
+    position: relative;
+    top: 2px;
+    margin-left: 8px;
+}
+.header-left .dropdown.for-header-site button {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/*-------------------------------------------
+    5. Header Area
+-------------------------------------------*/
+
+/*-------------------------------------------
+    6. Bottom Design Part Start
+-------------------------------------------*/
+#body-row {
+    height: 100vh;
+    margin-top: 100px;
+    position: relative;
+}
+
+/*-------------------------------------------
+    6. Bottom Design Part End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    7. Sidebar Menu Start Here
+-------------------------------------------*/
+/* #sidebar-container { */
+#accordionSidebar {
+    width: 270px;
+    background-color: #4B5468;
+    height: 100vh;
+    min-height: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 9;
+    transition: .3s ease all;
+}
+
+#accordionSidebar {
+    padding: 40px 15px 30px 15px;
+}
+#accordionSidebar.sidebar-nav a {
+    color: rgba(255, 255, 255, 0.55);
+    background-color: transparent;
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    padding: 16px 20px 16px 20px;
+    text-transform: capitalize;
+}
+#accordionSidebar.sidebar-nav a:hover {
+    background-color: #5B6477;
+    color: #fff;
+}
+
+.sidebar .nav-item .nav-link[aria-expanded="true"] {
+    background-color: #5B6477!important;
+    color: #fff!important;
+}
+#accordionSidebar.sidebar-nav a.collapse-item {
+    background-color: transparent;
+    margin: 0;
+    position: relative;
+    padding: 10px 8px 10px 40px;
+}
+#accordionSidebar.sidebar-nav a.collapse-item:before {
+    background-color: rgba(255, 255, 255, 0.55);
+    height: 6px;
+    width: 6px;
+    content: "";
+    position: absolute;
+    left: 21px;
+    border-radius: 50%;
+    top: 21px;
+}
+.sidebar .nav-item .nav-link[aria-expanded="true"]::after {
+    color: #fff!important;
+}
+.sidebar .nav-item .nav-link[data-toggle="collapse"]::after {
+  width: 1rem;
+  text-align: center;
+  float: right;
+  vertical-align: 0;
+  border: 0;
+  font-weight: 900;
+  content: '\f107';
+  font-family: 'Font Awesome 5 Free';
+}
+.sidebar .nav-item .nav-link[data-toggle="collapse"].collapsed::after {
+  content: '\f105';
+}
+/* ---Sidebar Menu End Here---  */
+
+/*-------------------------------------------
+   New Sidebar Menu CSS
+-------------------------------------------*/
+.accordion {
+    overflow-anchor: none;
+}
+
+.sidebar .nav-item {
+    position: relative;
+}
+
+.sidebar-dark .nav-item .nav-link[data-toggle="collapse"]::after {
+    color: rgba(255, 255, 255, 0.5);
+}
+@media (min-width: 768px) {
+    .sidebar .nav-item .nav-link[data-toggle="collapse"]::after {
+        width: 1rem;
+        text-align: center;
+        float: right;
+        vertical-align: 0;
+        border: 0;
+        font-weight: 900;
+        content: '\f107';
+        font-family: 'Font Awesome 5 Free';
+    }
+}
+@media (min-width: 768px) {
+    .sidebar .nav-item .nav-link[data-toggle="collapse"].collapsed::after {
+        content: '\f105';
+    }
+}
+.sidebar .nav-item .collapse {
+    -webkit-animation-name: growIn;
+    animation-name: growIn;
+    -webkit-animation-duration: 200ms;
+    animation-duration: 200ms;
+    -webkit-animation-timing-function: transform cubic-bezier(0.18, 1.25, 0.4, 1), opacity cubic-bezier(0, 1, 0.4, 1);
+    animation-timing-function: transform cubic-bezier(0.18, 1.25, 0.4, 1), opacity cubic-bezier(0, 1, 0.4, 1);
+}
+.sidebar .nav-item .collapse .collapse-inner .collapse-item, .sidebar .nav-item .collapsing .collapse-inner .collapse-item {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    display: block;
+    color: #3a3b45;
+    text-decoration: none;
+    border-radius: 0.35rem;
+    white-space: nowrap;
+}
+
+@media (min-width: 768px)
+{
+    .sidebar .nav-item .collapse, .sidebar .nav-item .collapsing {
+        margin: 0 1rem;
+    }
+}
+
+@media (min-width: 768px){
+    
+.sidebar .nav-item .collapse {
+    position: relative;
+    left: 0;
+    z-index: 1;
+    top: 0;
+    -webkit-animation: none;
+    animation: none;
+}
+}
+
+/* For Mobile Sidebar Test */
+
+.sidebar .nav-item.dropdown.show .dropdown-toggle::after,
+.topbar .nav-item.dropdown.show .dropdown-toggle::after {
+  content: '\f107';
+}
+
+/* @media (min-width: 768px) { */
+@media (min-width: 991px) {
+  .sidebar-toggled .inner-content-wrap {
+    margin-left: 0;
+}
+  .sidebar .nav-item .collapse {
+    position: relative;
+    left: 0;
+    z-index: 1;
+    top: 0;
+    -webkit-animation: none;
+    animation: none;
+  }
+  .sidebar .nav-item .collapse .collapse-inner {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .sidebar .nav-item .collapsing {
+    display: block;
+    transition: height 0.15s ease;
+  }
+  .sidebar .nav-item .collapse,
+  .sidebar .nav-item .collapsing {
+    margin: 0 1rem;
+  }
+  .sidebar .nav-item .nav-link i {
+    font-size: 0.85rem;
+    margin-right: 0.25rem;
+  }
+  .sidebar.toggled .nav-item .collapsing {
+    display: none;
+    transition: none;
+  }
+  .sidebar.toggled .nav-item .collapse,
+  .sidebar.toggled .nav-item .collapsing {
+    margin: 0;
+  }
+  .sidebar.toggled .nav-item:last-child {
+    margin-bottom: 1rem;
+  }
+  .sidebar.toggled .nav-item .nav-link i {
+    margin-right: 0;
+  }
+  .sidebar.toggled .sidebar-brand .sidebar-brand-icon i {
+    font-size: 2rem;
+  }
+}
+
+/* For Mobile Sidebar Test */
+
+/*-------------------------------------------
+   New Sidebar Menu CSS
+-------------------------------------------*/
+
+/*-------------------------------------------
+    7. Sidebar Menu End Here
+-------------------------------------------*/
+
+/*-------------------------------------------
+    8. Right Side Main Content Start Here
+-------------------------------------------*/
+
+/* Main Content Wrap */
+.col.main-content-wrap {
+    padding: 30px 30px 30px 30px;
+}
+.inner-content-wrap {
+    background-color: #fff;
+    border-radius: 6px;
+    margin-left: 270px;
+}
+
+.study-details-form {
+  padding: 30px 15px;
+  padding-top: 0;
+  margin: 0 30px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+/* ----Inner content menu Start---- */
+
+.inner-content-menu {
+    box-shadow: 8px 6px 11px -6px rgba(211, 211, 211, 0.25);
+}
+.inner-content-mainmenu{
+    padding: 20px 30px;
+}
+.inner-content-menu ul.inner-content-mainmenu li a {
+    border-left: 1px solid #E4E4E4;
+}
+.inner-content-menu ul li a {
+    color: #B9B9B9;
+    font-size: 14px;
+    line-height: 23px;
+    padding: 0 19px;
+    font-weight: 500;
+}
+.inner-content-menu ul li a.active {
+    color: var(--green-color);
+}
+.inner-content-menu ul li:first-child a {
+    padding-left: 0;
+    border-left: 0;
+}
+ul.inner-content-submenu li a {
+    padding-bottom: 20px;
+}
+ul.inner-content-submenu li a.active {
+  color: var(--violet-color)!important;
+}
+
+/* ----Inner content menu End---- */
+
+/* ----Inner content submenu Start------ */
+ul.inner-content-submenu {
+    display: flex;
+    padding: 0 30px;
+}
+ul.inner-content-submenu li a {
+    border-right: 0;
+}
+ul.inner-content-submenu li {
+    border-bottom: 2px solid rgba(228, 228, 228, 0.62);
+    width: auto;
+}
+ul.inner-content-submenu li a.active {
+    color: #697DE8;
+    border-bottom: 3px solid #697DE8;
+}
+
+/* ----Inner content submenu end---- */
+
+/*-------------------------------------------
+    9. Pages Form CSS Start Here
+-------------------------------------------*/
+label {
+    color: #B9B9B9;
+    line-height: 23px;
+}
+textarea.form-control {
+    height: auto;
+    min-height: 138px;
+}
+.sponsor-btn-wrap {
+    justify-content: space-between;
+}
+.sponsor-btn-wrap .add-sponsor {
+    color: var(--green-color);
+    font-weight: 500;
+}
+.fax-box button {
+    width: 170px;
+    height: 45px;
+    background-color: var(--green-color);
+    color: #fff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fax-box button i {
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+}
+.study-details-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.study-details-btn.study-button-list {
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: 0 auto;
+}
+.study-details-btn .btn-group-1 button {
+    display: inline-block;
+    height: 45px;
+    background-color: var(--green-color);
+    padding: 0 20px;
+    border-radius: 6px;
+    color: #fff;
+    margin-right: 10px;
+    transition: all .5s;
+}
+.study-details-btn .btn-group-1 button i {
+    margin-right: 0;
+}
+.study-details-btn .btn-group-1 button:hover {
+    color: #ffffff;
+    background-color: #0B9B3C;
+}
+.btn-group-1.btn-group-2.for-exchange-btn >button {
+    background-color: #4B5468;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-group-1.btn-group-2.for-exchange-btn >button:hover {
+    background-color: var(--green-color);
+}
+
+/*-------------------------------------------
+    9. Pages Form CSS End Here
+-------------------------------------------*/
+
+/*-------------------------------------------
+    10. Sponsor Team Page CSS Start
+-------------------------------------------*/
+.btn-group-1.sponsor-team-btn-group button {
+    margin-right: 0;
+    margin-left: 10px;
+}
+/*-------------------------------------------
+    10. Sponsor Team Page CSS End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    11. Data Table CSS Start Here
+-------------------------------------------*/
+.data-table-title h4 {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+.table {
+    border-radius: 6px;
+    box-shadow: 12px 3px 32px 1px rgb(211 211 211 / 25%);
+}
+.table tr {
+    transition: all .5s;
+}
+.table th,
+.table td {
+    white-space: nowrap;
+}
+.data-table tbody tr td {
+    white-space: nowrap;
+}
+.table tbody tr:hover {
+    background-color: #F8F8F8;
+}
+.table tbody tr:hover .form-control {
+    background-color: #ffffff;
+}
+.table .form-group {
+    margin-bottom: 0;
+}
+.data-table tbody tr td {
+    padding: 20px 15px;
+    vertical-align: middle;
+    border-bottom: 1px solid #EBEBEB;
+}
+.data-table tbody  tr:last-child td {
+    border-bottom: 0;
+}
+.table td, .table th {
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: 600;
+    color: #1B1B1B;
+}
+.data-table tr .custom-control-label {
+    font-size: 13px;
+}
+.delete-btn button {
+    background-color: var(--red-color);
+    color: #fff;
+    padding: 10px;
+    height: 26px;
+    width: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 0;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: none;
+}
+thead tr {
+  background: #FFFFFF;
+  box-shadow: 0px 5px 43px rgba(211, 211, 211, 0.25);
+}
+thead tr{
+    border: 0;
+}
+.table thead th {
+    border-bottom: none;
+    border: none;
+    padding: 20px 15px;
+    line-height: 36px;
+    color: #B9B9B9;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* Data Table Plugins CSS Start */
+table.dataTable {
+  margin-top: 0px !important;
+  margin-bottom: 30px !important;
+}
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before {
+  background-color: var(--green-color);
+  height: 1em;
+  width: 1em;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+  font-weight: 700;
+}
+table.dataTable>tbody>tr.child span.dtr-title {
+  margin-bottom: 3px;
+}
+/* Data Table Plugins CSS End */
+
+/*-------------------------------------------
+    11. Data Table CSS End Here
+-------------------------------------------*/
+
+/*-------------------------------------------
+    12. Study team form css start Here
+-------------------------------------------*/
+.row.study-team-form {
+    padding: 30px 16px;
+    border-radius: 6px;
+    box-shadow: 12px 3px 32px 1px rgb(211 211 211 / 25%);
+}
+/*-------------------------------------------
+    12. Study team form css End Here
+-------------------------------------------*/
+
+/*-------------------------------------------
+    13. Study Procedure Page CSS Start
+-------------------------------------------*/
+.switch-btn {
+    font-size: 20px;
+}
+/*-------------------------------------------
+    13. Study Procedure Page CSS End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    14. Subject Visit Tracking Page CSS
+-------------------------------------------*/
+.subject-visit-sub-name-btn.bg-active {
+    height: 32px;
+    width: 32px;
+    font-size: 12px;
+    line-height: 19px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.theme-button.visit-status-btn {
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.theme-button.visit-status-btn.lost-of-follo-up-btn {
+    background-color: #4B5468;
+}
+.data-table tr td {
+    position: relative;
+}
+span.table-data-badge {
+    position: absolute;
+    top: 20px;
+    background-color: var(--green-color);
+    color: #fff;
+    font-size: 12px;
+    min-height: 18px;
+    min-width: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 16px;
+}
+.subject-visit-tracking-page .table thead th {
+    line-height: 26px;
+}
+/*-------------------------------------------
+    14. Subject Visit Tracking Page CSS
+-------------------------------------------*/
+
+/*-------------------------------------------
+    15. Sidebar Toggle Overlay CSS Start
+-------------------------------------------*/
+.body-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  display: none;
+}
+.body-overlay.active {
+  display: block;
+}
+/*-------------------------------------------
+    15. Sidebar Toggle Overlay CSS End
+-------------------------------------------*/

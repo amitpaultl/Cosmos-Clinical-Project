@@ -1,0 +1,401 @@
+/*-------------------------------------------
+    25. Responsive Design CSS
+-------------------------------------------*/
+
+/*=====================================
+    Extra Large Screen
+========================================*/
+
+@media only screen and (min-width: 1920px){
+}
+
+/*=====================================
+  For Large Screen
+========================================*/
+
+/*------Max 1200px Width Screen------*/
+
+@media only screen and (max-width: 1775px) {
+
+}
+
+/*--------Max 1680px Width Screen---------*/
+@media (max-width: 1680px) {
+    .inner-content-menu {
+        padding: 0 10px;
+    }
+    .inner-content-menu ul li a {
+        font-size: 13px;
+        padding: 0 7px;
+    }
+}
+@media (max-width: 1366px) {
+    .nav.inner-content-mainmenu {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        padding-bottom: 12px;
+    }
+    .nav.inner-content-mainmenu .nav-item {
+        white-space: nowrap;
+    }
+    .inner-content-menu ul li a {
+        padding: 8px 16px;
+    }
+}
+
+/*--------Max 1366px Width Screen---------*/
+
+@media only screen and (max-width: 1366px) {
+
+  /*Default for Max 1366px Width Devices*/
+  body {
+      font-size: 14px;
+  }
+
+}
+
+/* custome code here  */
+@media (max-width: 1366px) {
+    .checkbox-btns  {
+        flex-flow: row wrap;
+    }
+    .custom-control.custom-checkbox {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    
+}
+
+/*--------Max 1200px Width Screen---------*/
+
+@media (max-width: 1367px) {
+    .inner-content-wrap {
+        margin-left: 270px;
+    }
+}
+
+/*=====================================
+  For Medium Screen
+========================================*/
+
+@media only screen and (max-width: 1199px){
+
+/* ---Top Header CSS--- */
+button#notification, button#message, .user-img-box {
+    height: 40px;
+    width: 40px;
+    font-size: 14px;
+}
+.user-img-box i {
+    font-size: 14px;
+}
+.header-left .dropdown.for-header-site button {
+    font-size: 13px;
+}
+.user-info .media-body h6 {
+    font-size: 12px;
+}
+.user-img-box {
+    margin-right: 10px!important;
+}
+/* ---Top Header CSS--- */
+
+/* Sidebar css  */
+#accordionSidebar.sidebar-nav a {
+    font-size: 14px;
+}
+/* Sidebar css  */
+
+/* Sponsor Team Page CSS */
+    .sponsor-team-page-form .study-details-btn .btn-group-1 button {
+        padding: 0 14px;
+    }
+
+}
+
+/*======================================
+      Tablet layout
+=========================================*/
+
+@media only screen and (max-width: 992px) {
+
+    /* Sponsor Team Page CSS */
+    .btn-group-1.sponsor-team-btn-group button {
+        margin-right: 0;
+        margin-left: 5px;
+    }
+
+}
+
+@media only screen and (min-width: 991px) {
+
+}
+/* custome code  */
+@media (max-width: 991px) {
+    .study-details-btn .btn-group-1 button {
+        padding: 0 15px;
+        margin-right: 5px;
+    }
+    .study-details-btn {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media only screen and (max-width: 991px){
+  
+    /* Top Header CSS  */
+    .header-right-part {
+        justify-content: flex-end!important;
+    }
+    .user-info {
+        display: none;
+    }
+    #sidebarToggleTop {
+        margin-left: 10px;
+        color: var(--green-color);
+    }
+    /* Top Header CSS  */
+
+    /* Main Content Wrap CSS Start */
+    .inner-content-wrap {
+        margin-left: 0;
+    }
+    .col.main-content-wrap {
+        padding: 30px 0 30px 0;
+    }
+    .study-details-btn.study-button-list {
+        right: 8px;
+    }
+    /* Main Content Wrap CSS End */
+
+    /* ----Sidebar Nav---- */
+    .sidebar {
+        margin-left: -270px;
+    }
+    .sidebar.toggled {
+        margin-left: 0 !important;
+        width: 270px !important;
+    }
+
+    /* Sponsor Team Page CSS */
+    .sponsor-team-page-form .study-details-btn .btn-group-1 button {
+        margin: 0 0 0 5px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+  /*Main Menu Bar*/
+
+  /* Content inner menu */
+  .inner-content-mainmenu {
+    padding: 16px 19px;
+    padding-bottom: 5px;
+}
+  .inner-content-submenu{
+    padding: 16px 19px;
+}
+.inner-content-menu ul li a {
+    font-size: 12px;
+    line-height: 17px;
+    padding: 8px 16px;
+    margin-bottom: 9px;
+}
+ul.inner-content-submenu li a {
+    border-right: 0;
+    margin-bottom: 0!important;
+    border-width: 1px!important;
+}
+  /* Content inner menu end */
+
+  /* Custom code */
+  .study-details-btn.study-button-list {
+    justify-content: flex-end;
+    left: auto;
+    right: 15px;
+}
+.study-details-btn {
+    width: 100%;
+}
+.study-details-btn {
+    flex-flow: row wrap;
+}
+.btn-group-1 {
+    margin: 5px 0;
+}
+.btn-group-1.btn-group-2 button {
+    margin-right: 0;
+    margin-left: 5px;
+}
+  /* Custom code */
+
+}
+
+/*=======================================
+      For Small Devices
+=========================================*/
+@media only screen and (max-width: 767px) {
+
+    /* Top Header Bar CSS Start */
+    .logo-area {
+        width: auto;
+    }
+    .logo-area img {
+        height: 34px;
+    }
+    .header-area {
+        padding: 19px 34px;
+        height: 75px;
+    }
+    #sidebarToggleTop {
+        margin-left: 15px;
+        color: var(--green-color);
+    }
+    /* Top Header Bar CSS Start */
+
+    /* Sidebar Mobile CSS */
+    
+    #accordionSidebar {
+        width: 270px;
+        overflow-y: auto;
+    }
+    /* Sidebar Mobile CSS */
+
+    /* Main content css */
+    #body-row {
+        margin-top: 75px;
+    }
+    /* Main content css */
+
+    /* DataTable CSS start */
+    .study-procedures-form .data-table tbody tr td {
+        padding: 20px 12px;
+    }
+    .table-wrap.table-responsive {
+        overflow-x: hidden;
+    }
+    .delete-btn button {
+        width: 34px;
+    }
+    /* DataTable CSS end */
+
+    /* custom code  */
+    .study-details-form {
+        padding: 15px;
+        margin: 0;
+    }
+
+    /* ----------------- */
+    .sidebar {
+        margin-left: -270px;
+    }
+    .sidebar.toggled {
+        margin-left: 0 !important;
+        width: 270px !important;
+    }
+
+}
+
+/*========================================
+          For large mobile
+=========================================*/
+@media (max-width: 766px){
+    /* custome code  */
+    .data-table tbody tr td {
+        padding: 15px 10px;
+    }
+    .table td, .table th {
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: 500;
+    }
+    .form-control {
+        font-weight: 500;
+    }
+    
+    }
+
+    @media only screen and (max-width:575px){
+        .dropdown.for-header-site {
+            display: none;
+        }
+        /* Content Inner Menu CSS */
+        .inner-content-mainmenu {
+            padding: 15px 15px;
+        }
+        .inner-content-menu ul li a {
+            font-size: 11px;
+            padding: 8px 10px;
+            line-height: 16px;
+            margin-bottom: 10px;
+        }
+        .sponsor-btn-wrap .add-sponsor {
+            font-size: 13px;
+        }
+        /* Content Inner Menu CSS end */
+
+    }
+    
+    @media only screen and (max-width:480px){
+
+        /* Header css */
+        #sidebarToggleTop {
+            margin-right: 0!important;
+        }
+
+        /* Content css */
+        .sidebar {
+            margin-left: -270px;
+        }
+        .sidebar.toggled {
+            margin-left: 0 !important;
+            width: 270px !important;
+        }
+
+    }
+
+ /* custme code  */
+ @media (max-width: 575px) {
+    .study-details-form {
+        padding: 15px;
+        margin: 0;
+    }
+    .row.study-team-form {
+        padding: 0;
+    }
+    .study-details-btn .btn-group-1 button {
+        height: 40px;
+        padding: 0 15px;
+    }
+}
+ /* custme code  */
+
+ @media (max-width: 414px) {
+    .custom-control.custom-checkbox {
+        width: 100%;
+    }
+    .study-details-btn .btn-group-1 button {
+        padding: 0 15px;
+        font-size: 12px;
+        height: 40px;
+    }
+ }
+
+
+/*=========================================
+      For very little mobile
+=========================================*/
+@media only screen and (min-width:300px) and (max-width:479px){
+  /*Header Area*/
+    .theme-button {
+        font-size: 13px;
+    }
+
+}
+/*-------------------------------------------
+      24. Responsive Design End
+-------------------------------------------*/
